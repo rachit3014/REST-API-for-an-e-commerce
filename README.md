@@ -20,19 +20,26 @@ To interact with the e-commerce API, you can use tools like [Postman](https://ww
 The base URL for the API is `http://localhost:8000/`.
 
 
+### Endpoints
 
 #### 1. Create a Product (POST)
-create a post by using http://localhost:8000/create url.
+create a post by using http://localhost:8000/create
 ![Screenshot (230)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/e1d15d32-7619-46ce-ae59-31ecb9da06ee)
 
-### Endpoints
 
 #### 2. Get All Products (GET)
 GET http://localhost:8000/all
 ![Screenshot (229)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/45a158de-5710-457f-8cf1-83d94ce6e9e5)
 
+#### 3. Get  Products details (GET)
+GET http://localhost:8000/product/:id
+## we have to provide product id 
+
+![Screenshot (235)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/8f5a0baf-e7c9-4df8-8538-2bca25f675c5)
+
+
 #### 4.Update a Product by ID (PUT)
-### we have to provide productid
+### we have to provide product id
 PUT http://localhost:8000/update/:id'
 ![Screenshot (231)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/da8be934-3cde-404e-bde5-4ad2a69dcfff)
 
