@@ -14,7 +14,7 @@ router.get('/search/',productcontroller.search)
 // routes for delete product
 router.delete('/delete/:id',productcontroller.deleteproduct)
 // routes for create product  varaint
-router.post('/varaint/:id',productcontroller.createvaraint)
+router.post('/variant/:id',productcontroller.createvaraint)
 // routes for create product
 router.get('/all',productcontroller.getallproduct)
 module.exports=router;
