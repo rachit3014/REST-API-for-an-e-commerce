@@ -24,61 +24,72 @@ The base URL for the API is `http://localhost:8000/`.
 
 #### 1. Create a Product (POST)
 create a post by using http://localhost:8000/create
+ Request Body:{
+        "name": "",
+        "description": "",
+        "price": 
+}
 ![Screenshot (230)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/e1d15d32-7619-46ce-ae59-31ecb9da06ee)
 
+### 2. Create a Product variant (POST)
+create a post by using http://localhost:8000/varaint/:id
+## we have to provide product id 
+Request Body:  {
+        "variantname": "",
+        "sku": "",
+        "additionalcost": ,
+        "stockcount":
+}
+![Screenshot (228)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/6afe722a-dbea-4785-8fa1-630a7cd45f54)
 
-#### 2. Get All Products (GET)
+
+#### 3. Get All Products (GET)
 GET http://localhost:8000/all
 ![Screenshot (229)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/45a158de-5710-457f-8cf1-83d94ce6e9e5)
 
-#### 3. Get  Products details (GET)
+#### 4. Get  Products details (GET)
 GET http://localhost:8000/product/:id
 ## we have to provide product id 
 
 ![Screenshot (235)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/8f5a0baf-e7c9-4df8-8538-2bca25f675c5)
 
 
-#### 4.Update a Product by ID (PUT)
-### we have to provide product id
+#### 5.Update a Product by ID (PUT)
 PUT http://localhost:8000/update/:id'
+ Request Body:{
+        "name": "",
+        "description": "",
+        "price": 
+}
+### we have to provide product id
+
 ![Screenshot (231)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/da8be934-3cde-404e-bde5-4ad2a69dcfff)
 
 
-Request Body:
 
-{
-  "name": "Updated Product Name",
-  "description": "Updated Product Description",
-  "price": 59.99
-}
-#### 5.Update a Product variant by ID (PUT)
+#### 6. Update a Product variant by ID (PUT)
  PUT http://localhost:8000/varaintupdate/?productid=&varaintid=
+#### we have to provide product id and variant id to url
+Request Body:  {
+        "variantname": "",
+        "sku": "",
+        "additionalcost": ,
+        "stockcount":
+}
+
  ![Screenshot (232)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/ae457d14-f085-4fb0-83c9-e8396e25f1a2)
 
-#### we have to provide productid and variant id to url
-Request Body:
 
-{
-  "name": "Updated Product Name",
-  "description": "Updated Product Description",
-  "price": 59.99
-}
 
-Request Body:
 
-{
-  "name": "Updated Product Name",
-  "description": "Updated Product Description",
-  "price": 59.99
-}
 
-#### 6.Delete a Product by ID (DELETE)
+#### 7. Delete a Product by ID (DELETE)
 
 DELETE http://localhost:8000/delete/:id'
-#### we have to provide productid to delete the product
+#### we have to provide product id in url to delete the product
  ![Screenshot (233)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/bc41bb1e-60c9-441c-bb77-c9b3ff622513)
 
- #### 7. Search for Products (GET)
+ #### 8. Search for Products (GET)
  GET http://localhost:8000/api/search?keyword=searchKeyword
  
 ![Screenshot (234)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/10a25dfa-023e-42d5-99e4-f751650f1ac7)
