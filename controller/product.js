@@ -59,7 +59,7 @@ module.exports.updateproductvaraint= async function(req,res)
         let product= await Product.findById(req.query.productid)
         if (product)
         {
-            let varaint =await Varaiant.findByIdAndUpdate(req.query.varaintid,req.body)
+            let varaint =await Varaiant.findByIdAndUpdate(req.query.variantid,req.body)
         }
         return res.status(200).json({
             message:"sucesfully updated",
