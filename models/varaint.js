@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const varaintSchema= new mongoose.Schema({
     
-   varaintname:{
+   variantname:{
     type:String,
     required:true
    },
