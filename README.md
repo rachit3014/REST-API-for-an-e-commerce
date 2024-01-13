@@ -1,4 +1,4 @@
-![Screenshot (231)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/a82c8b18-944b-4df7-8af4-7b77384fb79b)#  E-commerce API
+#  E-commerce API
 This is a RESTful API for an e-commerce system built using Node.js, Express, and MongoDB.
 ## Getting Started
 
@@ -32,6 +32,7 @@ GET http://localhost:8000/all
 ![Screenshot (229)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/45a158de-5710-457f-8cf1-83d94ce6e9e5)
 
 #### 4.Update a Product by ID (PUT)
+### we have to provide productid
 PUT http://localhost:8000/update/:id'
 ![Screenshot (231)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/da8be934-3cde-404e-bde5-4ad2a69dcfff)
 
@@ -47,7 +48,7 @@ Request Body:
  PUT http://localhost:8000/varaintupdate/?productid=&varaintid=
  ![Screenshot (232)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/ae457d14-f085-4fb0-83c9-e8396e25f1a2)
 
-#### we have to provide productid and variantid to url
+#### we have to provide productid and variant id to url
 Request Body:
 
 {
@@ -67,6 +68,7 @@ Request Body:
 #### 6.Delete a Product by ID (DELETE)
 
 DELETE http://localhost:8000/delete/:id'
+#### we have to provide productid to delete the product
  ![Screenshot (233)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/bc41bb1e-60c9-441c-bb77-c9b3ff622513)
 
  #### 7. Search for Products (GET)
