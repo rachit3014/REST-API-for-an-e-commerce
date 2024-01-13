@@ -191,4 +191,22 @@ module.exports.getallproduct=async function (req,res)
     }
 
 }
-module.exports
+module.exports.getproduct=async function(req,res)
+{
+    try {
+        let product= await Product.findById(req.params.id)
+        .populate('mutltiplevaraints')
+        return res.status(200).json({
+            sucess:true,
+            product
+        })
+        
+    } catch (error) {
+        console.log(error)
+        return res.status(400).json({
+            message:"some error in getting data",
+            sucess:false
+        })
+        
+    }
+}

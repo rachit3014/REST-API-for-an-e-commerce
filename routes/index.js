@@ -3,6 +3,8 @@ const router=express.Router()
 const productcontroller=require('../controller/product')
 // routes for create product
 router.post('/create',productcontroller.createproduct)
+// routes for get product by id
+router.get('/product/:id',productcontroller.getproduct)
 // routes for update product
 router.put('/update/:id',productcontroller.updateproduct)
 // routes for upadte  product varaints
