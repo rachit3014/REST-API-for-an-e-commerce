@@ -32,7 +32,7 @@ create a post by using http://localhost:8000/create
 ![Screenshot (230)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/e1d15d32-7619-46ce-ae59-31ecb9da06ee)
 
 ### 2. Create a Product variant (POST)
-create a post by using http://localhost:8000/varaint/:id
+create a post by using http://localhost:8000/variant/:id
 ## we have to provide product id 
 Request Body:  {
         "variantname": "",
@@ -40,7 +40,8 @@ Request Body:  {
         "additionalcost": ,
         "stockcount":
 }
-![Screenshot (228)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/6afe722a-dbea-4785-8fa1-630a7cd45f54)
+
+![Screenshot (238)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/cae9e294-f2f4-40e2-89fa-673cce9dbd98)
 
 
 #### 3. Get All Products (GET)
@@ -68,7 +69,7 @@ PUT http://localhost:8000/update/:id'
 
 
 #### 6. Update a Product variant by ID (PUT)
- PUT http://localhost:8000/varaintupdate/?productid=&varaintid=
+ PUT http://localhost:8000/variantupdate/?productid=&varaintid=
 #### we have to provide product id and variant id to url
 Request Body:  {
         "variantname": "",
@@ -77,8 +78,9 @@ Request Body:  {
         "stockcount":
 }
 
- ![Screenshot (232)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/ae457d14-f085-4fb0-83c9-e8396e25f1a2)
+ 
 
+![Screenshot (237)](https://github.com/rachit3014/REST-API-for-an-e-commerce/assets/84663169/6724d97d-d6a4-4e25-9c4f-18c578923bf2)
 
 
 
